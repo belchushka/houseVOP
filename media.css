@@ -1,0 +1,43 @@
+
+@media screen and (min-width: 1710px) {
+
+}
+
+@media screen and (max-width: 1710px) {
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+    .about_block .cards .card {
+        width: 35%;
+        margin-top: 60px;
+    }
+
+    .about_block .cards {
+        margin-top: -60px;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main_contacts p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main_contacts p + p {
+        margin-top: 20px;
+    }
+}

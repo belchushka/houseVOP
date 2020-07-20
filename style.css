@@ -1,0 +1,650 @@
+@import "fonts/font (5)/stylesheet.css";
+@import "fonts/font (6)/stylesheet.css";
+@import "media.css";
+
+:root {
+    --yy: #D4C17F;
+    --bg:#242B33
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: Raleway, sans-serif;
+}
+
+input, button {
+    font-family: Raleway, sans-serif;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: auto;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 48px;
+    line-height: 1.33;
+    color: var(--yy);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(media/Rectangle.png) no-repeat center / cover;
+}
+
+.block_title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.333;
+
+    color: #D4C17F;
+}
+
+header {
+    z-index: 99;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.fluid {
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #242B33;
+}
+
+.header {
+    height: 100px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+}
+
+.logo span {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: .12em;
+}
+
+.header .logo {
+}
+
+
+
+.header nav ul {
+    margin: 0 -20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header nav ul li {
+    margin: 10px 20px;
+}
+
+.main_block {
+    flex: 1 1 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.main_block .container {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 556px;
+    width: 100%;
+}
+
+.main_box {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.main_box .scroller {
+    margin-top: 100px;
+    width: 40px;
+    animation: mousemove 1s 0s infinite normal;
+    height: 40px;
+    background: url(media/mouse.svg) no-repeat 50% 50% / contain;
+}
+
+.main_contacts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    color: #FFF;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}
+
+.main_contacts p {
+    width: 50%;
+    flex: 0 0 auto;
+}
+
+.main_contacts p + p {
+    text-align: center;
+}
+
+
+.with_icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.with_icon:before {
+    margin-right: 15px;
+    width: 21px;
+    height: 21px;
+    content: "";
+    display: block;
+    flex: 0 0 auto;
+}
+
+.map_icon:before {
+    background: url(media/mao_icon.svg) no-repeat 50% 50% / contain;
+}
+
+.phone_icon:before {
+    background: url(media/phone_icon.svg) no-repeat 50% 50% / contain;
+}
+
+
+.about_block {
+    background: var(--bg);
+}
+
+.about_block .container {
+    padding: 175px 20px 115px 20px;
+}
+
+.about_block .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.about_block .cards .card .card_img {
+    display: flex;
+    justify-content: center;
+}
+
+.about_block .cards .card .card_img img {
+    height: 80px;
+    width: 80px;
+    flex: 0 0 auto;
+}
+
+.about_block .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(25% - 35px);
+}
+
+.about_block .card .card_text {
+    margin-top: 50px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.aps {
+    background: var(--bg);
+}
+
+.aps .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 65px;
+}
+
+.aps .card {
+    width: calc(50% - 15px);
+    position: relative;
+    background: url("media/aps.png") center /cover;
+    margin-top: 30px;
+}
+
+.aps .card .card_text {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.16;
+    left: 50px;
+    bottom: 50px;
+    color: #FFFFFF;
+}
+
+
+.aps .card:before {
+    content: "";
+    display: block;
+    padding-bottom: 60%;
+}
+
+.appointment {
+    background: url("media/Rectangle3.png") center / cover;
+}
+
+.appointment .container {
+    padding: 180px 20px;
+}
+
+.appointment .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    width: calc(50% - 10px);
+    color: #FFFFFF;
+}
+
+.appointment form {
+    width: calc(50% - 10px);
+}
+
+.appointment .form_desc {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.appointment form .inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment form .inputs input {
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    width: calc(50% - 15px);
+    border:none;
+    padding:12px 96px  ;
+    font-size: 14px;
+    line-height: 27px;
+
+    color: #BEBEBE;
+}
+
+.appointment form .btn_text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.appointment form .btn_text small {
+    width: calc(50% - 15px);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* or 123% */
+
+    text-align: center;
+
+    color: #E7E7E7;
+}
+
+.appointment form .btn_text button {
+    width: calc(50% - 15px);
+    padding:12px 54px  ;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    background: #D4C17F;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.video {
+    background: var(--bg);
+    padding-bottom: 180px;
+}
+
+.video .container {
+    max-width: 720px;
+}
+
+.video .video_block {
+    width: 100%;
+    position: relative;
+    background: url("media/video.png") center /cover;
+
+}
+
+.video .video_block:before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+
+}
+
+.video .video_block img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map {
+    background: var(--bg);
+    padding-bottom: 180px;
+}
+
+.map .map_block {
+    margin-top: 100px;
+    width: 100%;
+    height: 358px;
+    background: #626262;;
+}
+
+
+.question {
+    background: var(--bg);
+    padding-bottom: 180px;
+}
+
+.question form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question form small {
+    width: calc(25% - 17px);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* or 123% */
+
+    text-align: center;
+
+    color: #E7E7E7;
+}
+
+.question form input  {
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    width: calc(25% - 17px);
+    border:none;
+    padding:12px 96px  ;
+    font-size: 14px;
+    line-height: 27px;
+
+    color: #BEBEBE;
+}
+
+.question form button {
+    width: calc(25% - 17px);
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    background: #D4C17F;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    padding:12px 54px;
+    color: #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    height: 270px;
+    background: #2D343C;;
+}
+
+.header nav img {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+@keyframes mousemove {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+@media screen and (min-width: 1710px) {
+
+}
+
+@media screen and (max-width: 1710px) {
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 992px) {
+    .about_block .cards .card {
+        width: 35%;
+        margin-top: 60px;
+    }
+
+    .about_block .cards {
+        margin-top: -60px;
+        justify-content: space-around;
+    }
+
+    .header nav img {
+        display: block;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .question form {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .question form small {
+        width: 100%
+    }
+
+    .question form input  {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .question form button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .aps .card {
+       width: 100%;
+   }
+
+    .appointment .text {
+
+        width: 100%;
+
+    }
+
+    .appointment form {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main_contacts p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main_contacts p + p {
+        margin-top: 20px;
+    }
+
+    .appointment form .inputs {
+        width: 100%;
+        display: block;
+        margin-top: -20px;
+    }
+
+    .appointment form .inputs input {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 38px;
+        line-height: 1.33;
+        color: var(--yy);
+    }
+
+
+    .about_block .cards .card {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    .appointment form .btn_text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment form .btn_text small {
+        width: 100%;
+    }
+
+    .appointment form .btn_text button {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 320px) {
+    h2 {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 32px;
+        line-height: 1.33;
+        color: var(--yy);
+    }
+
+
+}
